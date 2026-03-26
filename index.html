@@ -133,6 +133,7 @@
               </div>
             </div>
           </div>
+          <img src="Pildid/Nimetu_1.png" /></li>
           <div class="screenshot-caption"><strong>Joonis 1.</strong> Change Working Time dialoog — vajutage <em>Create New Calendar...</em></div>
         </div>
 
@@ -140,9 +141,7 @@
           <li><span class="steps-num">1</span><div>Avage menüüst <code>Project</code> → <code>Properties</code> → <code>Change Working Time</code></div><br>
           <img src="Pildid/Nimetu.png" /></li>
           <li><span class="steps-num">2</span><div>Vajutage nuppu <code>Create New Calendar...</code> paremas ülanurgas</div><br>
-          <img src="Pildid/Nimetu_1.png" /></li>
           <li><span class="steps-num">3</span><div>Avaneb dialoog <em>"Create New Base Calendar"</em></div><br>
-          <img src="Pildid/Nimetu_2.png" /></li>
           <li><span class="steps-num">4</span><div>Valige <strong>"Create new base calendar" või "Make a copy (Kalendar_nimi)"</strong></div></li>
           <li><span class="steps-num">5</span><div>Vajutage <strong>OK</strong> — uus kalender on loodud!</div></li>
         </ol>
@@ -170,6 +169,7 @@
             </div>
           </div>
           <div class="screenshot-caption"><strong>Joonis 2.</strong> Sisestage uue kalendri nimi ja vajutage OK</div>
+          <img src="Pildid/Nimetu_2.png" /></li>
         </div>
 
         <div class="tip-box tip-box--green">
@@ -206,33 +206,33 @@
               <div class="wt-panel">
                 <div class="wt-title">Selected day(s) working times:</div>
                 <div class="wt-days">
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Monday <em>(kuni 15:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Tuesday <em>(kuni 15:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Wednesday <em>(kuni 15:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Thursday <em>(kuni 15:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Friday <em>(kuni 15:00)</em></span></div>
+                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Monday <em>(14:00 kuni 23:00)</em></span></div>
+                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Tuesday <em>(14:00 kuni 23:00)</em></span></div>
+                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Wednesday <em>(14:00 kuni 23:00)</em></span></div>
+                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Thursday <em>(14:00 kuni 23:00)</em></span></div>
+                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Friday <em>(14:00 kuni 23:00)</em></span></div>
                   <div class="wt-day wt-day--we"><input type="checkbox" /><span>Saturday</span></div>
                   <div class="wt-day wt-day--we"><input type="checkbox" /><span>Sunday</span></div>
                 </div>
                 <table class="mock-table mock-table--sm">
                   <thead><tr><th>From</th><th>To</th></tr></thead>
                   <tbody>
-                    <tr><td>08:00</td><td>12:00</td></tr>
-                    <tr class="tr--hl"><td>13:00</td><td><strong>15:00</strong></td></tr>
+                    <tr><td>14:00</td><td>18:00</td></tr>
+                    <tr class="tr--hl"><td>19:00</td><td><strong>23:00</strong></td></tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-          <div class="screenshot-caption"><strong>Joonis 3.</strong> Work Weeks → Details — muutke reede lõpuaega kella 15:00-ks</div>
+          <img src="Pildid/Nimetu_4.png" /></li>
+          <div class="screenshot-caption"><strong>Joonis 3.</strong> Work Weeks → Details — muutke tööpäevad algusaega 14:00 ja lõpuaega kella 23:00-ks</div>
         </div>
 
         <ol class="steps-list">
           <li><span class="steps-num">1</span><div>Avage vahekaart <code>Work Weeks</code></div></li>
           <li><span class="steps-num">2</span><div>Valige rida <code>[Default]</code> ja vajutage <code>Details...</code></div></li>
-          <img src="Pildid/Nimetu_3.png" /></li>
           <li><span class="steps-num">3</span><div>Avaneb Details paneel, kus saate valida iga päeva ja muuta tööaegu</div></li>
-          <li><span class="steps-num">4</span><div>Reede lühendamiseks: valige <strong>Friday</strong>, muutke lõpuaeg <code>15:00</code>-ks</div></li>
+          <li><span class="steps-num">4</span><div>Tööpaevad muutus: valige <strong>Weekly -> Tööpaevad (Monday, Tuesday, Wednesday, Thursdayand Friday)</strong>,muutke algusaeg <code>14:00</code>-ks ja lõpuaeg <code>23:00</code>-ks</div></li>
           <li><span class="steps-num">5</span><div>Vajutage <strong>OK</strong> muudatuste salvestamiseks</div></li>
         </ol>
 
@@ -243,101 +243,10 @@
       </div>
     </section>
 
-    <!-- SECTION 4 -->
-    <section class="section section--alt" id="eripaevad">
-      <div class="section-inner">
-        <div class="step-badge">Samm 3</div>
-        <h2 class="section-title">Eripäevade lisamine</h2>
-        <p>Eripäevad (<em>Exceptions</em>) on konkreetsed kuupäevad, mis erineva töögraafikuga — riigipühad, ettevõtte puhkepäevad, või lühendatud tööpäevad.</p>
-
-        <div class="screenshot-wrap">
-          <div class="screenshot-toolbar">
-            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-            <span class="toolbar-title">Change Working Time — Exceptions</span>
-          </div>
-          <div class="screenshot-body">
-            <div class="mock-dialog">
-              <div class="dialog-titlebar">Change Working Time — Meie ettevõte 2025</div>
-              <div class="dialog-tabs">
-                <span class="dtab dtab--active">Exceptions</span>
-                <span class="dtab">Work Weeks</span>
-              </div>
-              <table class="mock-table mock-table--full">
-                <thead><tr><th>Name</th><th>Start</th><th>Finish</th></tr></thead>
-                <tbody>
-                  <tr class="tr--holiday"><td>🎄 Jõulupüha</td><td>25.12.2025</td><td>25.12.2025</td></tr>
-                  <tr class="tr--holiday"><td>🎉 Teine jõulupüha</td><td>26.12.2025</td><td>26.12.2025</td></tr>
-                  <tr class="tr--holiday tr--selected"><td>🏖️ Suvepuhkus</td><td>01.07.2025</td><td>31.07.2025</td></tr>
-                  <tr><td>&nbsp;</td><td></td><td></td></tr>
-                </tbody>
-              </table>
-              <div class="exc-btns">
-                <button class="mock-btn mock-btn--primary">Details...</button>
-                <button class="mock-btn">Delete</button>
-              </div>
-              <div class="mock-cal" style="margin-top:.75rem">
-                <div class="mock-cal__header">
-                  <span>◀</span><span>December 2025</span><span>▶</span>
-                </div>
-                <div class="mock-cal__grid">
-                  <div class="cal-dn">Mon</div><div class="cal-dn">Tue</div><div class="cal-dn">Wed</div>
-                  <div class="cal-dn">Thu</div><div class="cal-dn">Fri</div>
-                  <div class="cal-dn cal-dn--we">Sat</div><div class="cal-dn cal-dn--we">Sun</div>
-                  <div class="cal-d">1</div><div class="cal-d">2</div><div class="cal-d">3</div>
-                  <div class="cal-d">4</div><div class="cal-d">5</div>
-                  <div class="cal-d cal-d--we">6</div><div class="cal-d cal-d--we">7</div>
-                  <div class="cal-d">8</div><div class="cal-d">9</div><div class="cal-d">10</div>
-                  <div class="cal-d">11</div><div class="cal-d">12</div>
-                  <div class="cal-d cal-d--we">13</div><div class="cal-d cal-d--we">14</div>
-                  <div class="cal-d">15</div><div class="cal-d">16</div><div class="cal-d">17</div>
-                  <div class="cal-d">18</div><div class="cal-d">19</div>
-                  <div class="cal-d cal-d--we">20</div><div class="cal-d cal-d--we">21</div>
-                  <div class="cal-d">22</div><div class="cal-d">23</div><div class="cal-d">24</div>
-                  <div class="cal-d cal-d--hol">25</div><div class="cal-d cal-d--hol">26</div>
-                  <div class="cal-d cal-d--we">27</div><div class="cal-d cal-d--we">28</div>
-                  <div class="cal-d">29</div><div class="cal-d">30</div><div class="cal-d">31</div>
-                  <div class="cal-d cal-d--we"></div><div class="cal-d cal-d--we"></div>
-                </div>
-                <div class="cal-legend">
-                  <span><span class="leg-dot leg-dot--hol"></span> Puhkepäev</span>
-                  <span><span class="leg-dot leg-dot--we"></span> Nädalavahetus</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="screenshot-caption"><strong>Joonis 4.</strong> Exceptions — lisatud jõulupühad ja suvepuhkus. Puhkepäevad on tähistatud sinisega kalenderis.</div>
-        </div>
-
-        <ol class="steps-list">
-          <li><span class="steps-num">1</span><div>Avage vahekaart <code>Exceptions</code></div></li>
-          <li><span class="steps-num">2</span><div>Klõpsake tühjale reale veerus <strong>Name</strong> ja tippige puhkepäeva nimi</div></li>
-          <li><span class="steps-num">3</span><div>Sisestage <strong>Start</strong> ja <strong>Finish</strong> kuupäevad</div></li>
-          <li><span class="steps-num">4</span><div>Vajutage <code>Details...</code>, et valida, kas päev on töövaba (<em>Nonworking</em>) või lühendatud tööajaga</div></li>
-          <li><span class="steps-num">5</span><div>Korrake iga puhkepäeva jaoks ja vajutage <strong>OK</strong></div></li>
-        </ol>
-
-        <div class="holidays-block">
-          <h3>Eesti riigipühad (näidis lisamiseks)</h3>
-          <div class="holidays-grid">
-            <div class="hchip">🎆 1. jaan — Uusaasta</div>
-            <div class="hchip">🕊️ 24. veebr — Iseseisvuspäev</div>
-            <div class="hchip">✝️ Suur reede</div>
-            <div class="hchip">✝️ Ülestõusmispühade 1. püha</div>
-            <div class="hchip">🌸 1. mai — Kevadpüha</div>
-            <div class="hchip">🇪🇪 23. juuni — Võidupüha</div>
-            <div class="hchip">🔥 24. juuni — Jaanipäev</div>
-            <div class="hchip">🍂 20. aug — Taasiseseisvumispäev</div>
-            <div class="hchip">🎄 25. dets — Jõulupüha</div>
-            <div class="hchip">🎁 26. dets — Teine jõulupüha</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- SECTION 5 -->
     <section class="section" id="kasutamine">
       <div class="section-inner">
-        <div class="step-badge">Samm 4</div>
+        <div class="step-badge">Samm 3</div>
         <h2 class="section-title">Kalendri kasutamine projektis</h2>
         <p>Loodud kalender tuleb <strong>projektile rakendada</strong>. Selleks kasutatakse Project Information dialoogi.</p>
 
@@ -361,7 +270,7 @@
                 <label class="label--hl">Calendar:</label>
                 <select class="mock-select mock-select--hl">
                   <option>Standard</option>
-                  <option selected>Meie ettevõte 2025</option>
+                  <option selected>New Calendar</option>
                   <option>Night Shift</option>
                   <option>24 Hours</option>
                 </select>
@@ -377,13 +286,13 @@
               </div>
             </div>
           </div>
-          <div class="screenshot-caption"><strong>Joonis 5.</strong> Project Information — valige Calendar ripploendist <em>Meie ettevõte 2025</em></div>
+          <div class="screenshot-caption"><strong>Joonis 4.</strong> Project Information — valige Calendar ripploendist <em>New Calendar</em></div>
         </div>
 
         <ol class="steps-list">
           <li><span class="steps-num">1</span><div>Avage <code>Project</code> → <code>Properties</code> → <code>Project Information</code></div></li>
           <li><span class="steps-num">2</span><div>Leidke väli <strong>Calendar</strong></div></li>
-          <li><span class="steps-num">3</span><div>Valige ripploendist <code>Meie ettevõte 2025</code></div></li>
+          <li><span class="steps-num">3</span><div>Valige ripploendist <code>New Calendar</code></div></li>
           <li><span class="steps-num">4</span><div>Vajutage <strong>OK</strong> — projekt kasutab nüüd teie loodud kalendrit</div></li>
         </ol>
 
