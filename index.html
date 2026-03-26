@@ -1,384 +1,107 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Microsoft Project — Kalendri loomine</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsoft Project – Kalendri loomine</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="header-badge">MS Project · Juhend</div>
-      <h1 class="site-title">Kalendri loomine<br /><span>Microsoft Project'is</span></h1>
-      <p class="site-desc">Samm-sammult juhend uue kalendri loomiseks, tööaegade muutmiseks ja kalendri rakendamiseks projektis.</p>
-      <div class="header-meta">
-        <span>⏱ Lugemisaeg: ~10 min</span>
-        <span>📋 4 sammu</span>
-        <span>🎯 Algajatele sobiv</span>
+<nav>
+  <div class="nav-logo">MS Project / Juhend</div>
+  <a href="index.html" class="active">Kalendri loomine</a>
+  <a href="valem.html">Arvutusväli</a>
+  <a href="diagramm.html">Diagrammid</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-tag">Samm-sammult juhend</div>
+  <h1>Uue kalendri loomine<br><span>Microsoft Project'is</span></h1>
+  <p>See juhend selgitab, kuidas luua kohandatud töökalender, muuta tööaegu ning rakendada kalendrit projekti ülesannetele.</p>
+</div>
+
+<div class="content">
+
+  <div class="step">
+    <div class="step-num">01</div>
+    <div class="step-body">
+      <h2>Ava Change Working Time</h2>
+      <p>Mine menüüreale <code>Project</code> → <code>Change Working Time</code>. See avab akna, kus saad hallata kõiki projekti kalendreid.</p>
+      <div class="screenshot">
+        <div class="screenshot-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span style="font-size:0.75rem;color:var(--text-dim);margin-left:0.5rem">Microsoft Project – Project ribbon</span></div>
+        <img src="Pildid/Nimetu.png alt="Project menüü – Change Working Time nupp">
+      </div>
+      <div class="info-box"><strong>Märkus:</strong> Funktsioon asub <code>Project</code> vahekaardil grupis <em>Properties</em>.</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">02</div>
+    <div class="step-body">
+      <h2>Tutvu Change Working Time aknaga</h2>
+      <p>Avaneb aken, kus kuvatakse praegune standardkalender. Saad näha tööpäevi, puhkepäevi ja erandeid. Vaikimisi on tööaeg <strong>08:00–12:00</strong> ja <strong>13:00–17:00</strong>.</p>
+      <div class="screenshot">
+        <div class="screenshot-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span style="font-size:0.75rem;color:var(--text-dim);margin-left:0.5rem">Change Working Time aken</span></div>
+        <img src="Pildid/Nimetu_1.png alt="Change Working Time aken – standardkalender">
       </div>
     </div>
-    <div class="header-grid-bg" aria-hidden="true"></div>
-  </header>
+  </div>
 
-  <!-- TOC -->
-  <nav class="toc" aria-label="Sisukord">
-    <div class="toc-inner">
-      <span class="toc-label">Sisukord</span>
-      <ol class="toc-list">
-        <li><a href="#mis-on-kalender">Mis on kalender?</a></li>
-        <li><a href="#uus-kalender">Uue kalendri loomine</a></li>
-        <li><a href="#tooajad">Tööaegade muutmine</a></li>
-        <li><a href="#eripaevad">Eripäevade lisamine</a></li>
-        <li><a href="#kasutamine">Kalendri kasutamine projektis</a></li>
-        <li><a href="#moju">Mõju ajakavale</a></li>
-      </ol>
+  <div class="step">
+    <div class="step-num">03</div>
+    <div class="step-body">
+      <h2>Loo uus kalender</h2>
+      <p>Klõpsa nupul <code>Create New Calendar…</code>. Avaneb dialoog, kus saad sisestada kalendri nime ja valida, kas luua täiesti uus kalender või koopia olemasolevast. Vali <em>Make a copy of Standard</em> ja klõpsa <code>OK</code>.</p>
+      <div class="screenshot">
+        <div class="screenshot-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span style="font-size:0.75rem;color:var(--text-dim);margin-left:0.5rem">Create New Base Calendar dialoog</span></div>
+       <img src="Pildid/Nimetu_2.png alt="Uue kalendri loomise dialoog">
+      </div>
+      <div class="tip-box">💡 <strong>Soovitus:</strong> Nimeta kalender kirjeldavalt, näiteks <em>Õhtune tööaeg</em> või <em>Projekti kalender 2026</em>.</div>
     </div>
-  </nav>
+  </div>
 
-  <main class="main-content">
-
-    <!-- SECTION 1 -->
-    <section class="section" id="mis-on-kalender">
-      <div class="section-inner">
-        <div class="step-badge">Sissejuhatus</div>
-        <h2 class="section-title">Mis on kalender Microsoft Project'is?</h2>
-        <p>Microsoft Project kasutab <strong>kalendreid</strong>, et määrata, millal töö saab toimuda. Kalender määrab tööpäevad, tööajad ning puhkepäevad. Ilma korrektse kalendrita võib teie projekt planeerida ülesandeid nädalavahetustele või pühadele.</p>
-        <p>Project'is on kolme tüüpi kalendreid:</p>
-
-        <div class="info-grid">
-          <div class="info-card">
-            <div class="info-card__icon">🗂️</div>
-            <h3>Projekti kalender</h3>
-            <p>Rakendub kogu projektile vaikimisi. Kõik ülesanded järgivad seda kalendrit, kui pole teisiti määratud.</p>
-          </div>
-          <div class="info-card">
-            <div class="info-card__icon">👤</div>
-            <h3>Ressursi kalender</h3>
-            <p>Määrab üksiku töötaja töögraafiku — näiteks osalise tööajaga töötaja või teises ajavööndis asuv kolleeg.</p>
-          </div>
-          <div class="info-card">
-            <div class="info-card__icon">✅</div>
-            <h3>Ülesande kalender</h3>
-            <p>Rakendub konkreetsele ülesandele. Kasulik, kui ülesanne toimub väljaspool tavapärast tööaega (nt öövahetused).</p>
-          </div>
-        </div>
-
-        <div class="tip-box tip-box--blue">
-          <span class="tip-icon">💡</span>
-          <div><strong>Miks see on oluline?</strong> Kui loote projekti ilma kohandatud kalendrita, kasutab Project vaikimisi Standard-kalendrit (E–R, 08:00–17:00). Pühad ja ettevõtte vabad päevad ei ole automaatselt arvestatud!</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 2 -->
-    <section class="section section--alt" id="uus-kalender">
-      <div class="section-inner">
-        <div class="step-badge">Samm 1</div>
-        <h2 class="section-title">Uue kalendri loomine</h2>
-        <p>Uue kalendri loomiseks avage <strong>Change Working Time</strong> dialoog. See asub menüüs <em>Project → Properties → Change Working Time</em>.</p>
-        <div class="screenshot-wrap">
-          <div class="screenshot-toolbar">
-            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-            <span class="toolbar-title">Microsoft Project — Change Working Time</span>
-          </div>
-          <div class="screenshot-body">
-            <div class="mock-ribbon">
-              <span class="ribbon-tab ribbon-tab--active">Project</span>
-              <span class="ribbon-tab">Task</span>
-              <span class="ribbon-tab">Resource</span>
-              <span class="ribbon-tab">View</span>
-              <div class="ribbon-btns">
-                <button class="ribbon-btn ribbon-btn--highlight">📅 Change Working Time</button>
-                <button class="ribbon-btn">Project Information</button>
-                <button class="ribbon-btn">Custom Fields</button>
-              </div>
-            </div>
-            <div class="mock-dialog">
-              <div class="dialog-titlebar">Change Working Time</div>
-              <div class="dialog-row">
-                <label>For calendar:</label>
-                <select class="mock-select"><option>Standard (Project Calendar)</option></select>
-                <button class="mock-btn mock-btn--highlight">Create New Calendar...</button>
-              </div>
-              <div class="mock-cal">
-                <div class="mock-cal__header">
-                  <span>◀</span><span>January 2025</span><span>▶</span>
-                </div>
-                <div class="mock-cal__grid">
-                  <div class="cal-dn">Mon</div><div class="cal-dn">Tue</div><div class="cal-dn">Wed</div>
-                  <div class="cal-dn">Thu</div><div class="cal-dn">Fri</div>
-                  <div class="cal-dn cal-dn--we">Sat</div><div class="cal-dn cal-dn--we">Sun</div>
-                  <div class="cal-d"></div><div class="cal-d"></div><div class="cal-d">1</div>
-                  <div class="cal-d">2</div><div class="cal-d">3</div>
-                  <div class="cal-d cal-d--we">4</div><div class="cal-d cal-d--we">5</div>
-                  <div class="cal-d">6</div><div class="cal-d">7</div><div class="cal-d">8</div>
-                  <div class="cal-d">9</div><div class="cal-d">10</div>
-                  <div class="cal-d cal-d--we">11</div><div class="cal-d cal-d--we">12</div>
-                  <div class="cal-d">13</div><div class="cal-d">14</div><div class="cal-d">15</div>
-                  <div class="cal-d">16</div><div class="cal-d">17</div>
-                  <div class="cal-d cal-d--we">18</div><div class="cal-d cal-d--we">19</div>
-                  <div class="cal-d">20</div><div class="cal-d">21</div><div class="cal-d">22</div>
-                  <div class="cal-d">23</div><div class="cal-d">24</div>
-                  <div class="cal-d cal-d--we">25</div><div class="cal-d cal-d--we">26</div>
-                  <div class="cal-d">27</div><div class="cal-d">28</div><div class="cal-d">29</div>
-                  <div class="cal-d">30</div><div class="cal-d">31</div>
-                  <div class="cal-d cal-d--we"></div><div class="cal-d cal-d--we"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img style="width:500px;" src="Pildid/Nimetu_1.png" />
-          <div class="screenshot-caption"><strong>Joonis 1.</strong> Change Working Time dialoog — vajutage <em>Create New Calendar...</em></div>
-        </div>
-
-        <ol class="steps-list">
-          <li><span class="steps-num">1</span><div>Avage menüüst <code>Project</code> → <code>Properties</code> → <code>Change Working Time</code></div><br>
-          <img style="width:350px;" src="Pildid/Nimetu.png" /></li>
-          <li><span class="steps-num">2</span><div>Vajutage nuppu <code>Create New Calendar...</code> paremas ülanurgas</div></li>
-          <li><span class="steps-num">3</span><div>Avaneb dialoog <em>"Create New Base Calendar"</em></div></li>
-          <li><span class="steps-num">4</span><div>Valige <strong>"Create new base calendar" või "Make a copy (Kalendar_nimi)"</strong></div></li>
-          <li><span class="steps-num">5</span><div>Vajutage <strong>OK</strong> — uus kalender on loodud!</div></li>
-        </ol>
-
-        <div class="screenshot-wrap">
-          <div class="screenshot-toolbar">
-            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-            <span class="toolbar-title">Create New Base Calendar</span>
-          </div>
-          <div class="screenshot-body screenshot-body--pad">
-            <div class="mock-dialog mock-dialog--sm">
-              <div class="dialog-titlebar">Create New Base Calendar</div>
-              <div class="dialog-radios">
-                <label><input type="radio" name="ct" checked /> Create new base calendar</label>
-                <label><input type="radio" name="ct" /> Make a copy of <select class="mock-select mock-select--inline"><option>Standard</option></select> calendar</label>
-              </div>
-              <div class="dialog-namefield">
-                <label>Name:</label>
-                <input class="mock-input mock-input--highlight" value="New Calendar" readonly />
-              </div>
-              <div class="dialog-btns">
-                <button class="mock-btn mock-btn--primary">OK</button>
-                <button class="mock-btn">Cancel</button>
-              </div>
-            </div>
-          </div>
-          <div class="screenshot-caption"><strong>Joonis 2.</strong> Sisestage uue kalendri nimi ja vajutage OK</div>
-          <img src="Pildid/Nimetu_2.png" /></li>
-        </div>
-
-        <div class="tip-box tip-box--green">
-          <span class="tip-icon">✅</span>
-          <div><strong>Nõuanne:</strong> Kasutage selget nimetust, mis sisaldab aastat (nt <em>New Calendar</em>). Nii on hiljem lihtne eristada erinevate aastate kalendreid.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 3 -->
-    <section class="section" id="tooajad">
-      <div class="section-inner">
-        <div class="step-badge">Samm 2</div>
-        <h2 class="section-title">Tööaegade muutmine</h2>
-        <p>Pärast kalendri loomist tuleb määrata <strong>tööpäevad ja tööajad</strong>. Vaikimisi on tööpäevad esmaspäevast reedeni, kell 08:00–12:00 ja 13:00–17:00.</p>
-
-        <div class="screenshot-wrap">
-          <div class="screenshot-toolbar">
-            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-            <span class="toolbar-title">Change Working Time — Work Weeks</span>
-          </div>
-          <div class="screenshot-body">
-            <div class="mock-dialog">
-              <div class="dialog-titlebar">Change Working Time — New Calendar</div>
-              <div class="dialog-tabs">
-                <span class="dtab">Exceptions</span>
-                <span class="dtab dtab--active">Work Weeks</span>
-              </div>
-              <table class="mock-table">
-                <thead><tr><th>Name</th><th>Start</th><th>Finish</th></tr></thead>
-                <tbody><tr class="tr--selected"><td>[Default]</td><td>NA</td><td>NA</td></tr></tbody>
-              </table>
-              <button class="mock-btn mock-btn--primary" style="margin:.5rem 0">Details...</button>
-              <div class="wt-panel">
-                <div class="wt-title">Selected day(s) working times:</div>
-                <div class="wt-days">
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Monday <em>(14:00 kuni 23:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Tuesday <em>(14:00 kuni 23:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Wednesday <em>(14:00 kuni 23:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Thursday <em>(14:00 kuni 23:00)</em></span></div>
-                  <div class="wt-day wt-day--hl"><input type="checkbox" checked /><span>Friday <em>(14:00 kuni 23:00)</em></span></div>
-                  <div class="wt-day wt-day--we"><input type="checkbox" /><span>Saturday</span></div>
-                  <div class="wt-day wt-day--we"><input type="checkbox" /><span>Sunday</span></div>
-                </div>
-                <table class="mock-table mock-table--sm">
-                  <thead><tr><th>From</th><th>To</th></tr></thead>
-                  <tbody>
-                    <tr><td>14:00</td><td>18:00</td></tr>
-                    <tr class="tr--hl"><td>19:00</td><td><strong>23:00</strong></td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <img src="Pildid/Nimetu_4.png" /></li>
-          <div class="screenshot-caption"><strong>Joonis 3.</strong> Work Weeks → Details — muutke tööpäevad algusaega 14:00 ja lõpuaega kella 23:00-ks</div>
-        </div>
-
-        <ol class="steps-list">
-          <li><span class="steps-num">1</span><div>Avage vahekaart <code>Work Weeks</code></div></li>
-          <li><span class="steps-num">2</span><div>Valige rida <code>[Default]</code> ja vajutage <code>Details...</code></div></li>
-          <li><span class="steps-num">3</span><div>Avaneb Details paneel, kus saate valida iga päeva ja muuta tööaegu</div></li>
-          <li><span class="steps-num">4</span><div>Tööpaevad muutus: valige <strong>Weekly -> Tööpaevad (Monday, Tuesday, Wednesday, Thursdayand Friday)</strong>,muutke algusaeg <code>14:00</code>-ks ja lõpuaeg <code>23:00</code>-ks</div></li>
-          <li><span class="steps-num">5</span><div>Vajutage <strong>OK</strong> muudatuste salvestamiseks</div></li>
-        </ol>
-
-        <div class="tip-box tip-box--yellow">
-          <span class="tip-icon">⚠️</span>
-          <div><strong>Pane tähele:</strong> Tööaegade muutmine mõjutab kõigi ülesannete kestust, mis kasutavad seda kalendrit. Muutused kajastuvad kohe Gantt-diagrammis.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SECTION 4 -->
-    <section class="section" id="kasutamine">
-      <div class="section-inner">
-        <div class="step-badge">Samm 3</div>
-        <h2 class="section-title">Kalendri kasutamine projektis</h2>
-        <p>Loodud kalender tuleb <strong>projektile rakendada</strong>. Selleks kasutatakse Project Information dialoogi.</p>
-
-        <div class="screenshot-wrap">
-          <div class="screenshot-toolbar">
-            <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
-            <span class="toolbar-title">Project Information</span>
-          </div>
-          <div class="screenshot-body screenshot-body--pad">
-            <div class="mock-dialog mock-dialog--md">
-              <div class="dialog-titlebar">Project Information for 'Minu Projekt'</div>
-              <div class="proj-info-grid">
-                <label>Start date:</label>
-                <input class="mock-input" value="Mon 06.01.2025" readonly />
-                <label>Finish date:</label>
-                <input class="mock-input" value="Fri 31.10.2025" readonly />
-                <label>Schedule from:</label>
-                <select class="mock-select"><option>Project Start Date</option></select>
-                <label>Current date:</label>
-                <input class="mock-input" value="Wed 25.03.2026" readonly />
-                <label class="label--hl">Calendar:</label>
-                <select class="mock-select mock-select--hl">
-                  <option>None</option>
-                  <option>24 Hours</option>
-                  <option>d</option>
-                  <option selected>Night Shift</option>
-                  <option>Night Shift</option>
-                  <option>Standart</option>
-                </select>
-                <label>Priority:</label>
-                <input class="mock-input" value="500" readonly />
-              </div>
-              <div class="dialog-btns dialog-btns--spread">
-                <button class="mock-btn">Statistics...</button>
-                <div>
-                  <button class="mock-btn mock-btn--primary">OK</button>
-                  <button class="mock-btn">Cancel</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <img src="Pildid/Nimetu_7.png" /></li>
-          <div class="screenshot-caption"><strong>Joonis 4.</strong> Project Information — valige Calendar ripploendist <em>New Calendar</em></div>
-        </div>
-
-        <ol class="steps-list">
-          <li><span class="steps-num">1</span><div>Avage <code>Project</code> → <code>Properties</code> → <code>Project Information</code></div></li>
-          <li><span class="steps-num">2</span><div>Leidke väli <strong>Calendar</strong></div></li>
-          <li><span class="steps-num">3</span><div>Valige ripploendist <code>New Calendar</code></div></li>
-          <li><span class="steps-num">4</span><div>Vajutage <strong>OK</strong> — projekt kasutab nüüd teie loodud kalendrit</div></li>
-        </ol>
-
-        <div class="tip-box tip-box--blue">
-          <span class="tip-icon">💡</span>
-          <div><strong>Ressursi kalender:</strong> Üksiku ressursi kalendri määramiseks minge <code>Resource Sheet</code> vaatesse → topeltklõpsake ressursil → vahekaardil <em>General</em> leidke väli <strong>Base Calendar</strong>.</div>
-        </div>
-        <img src="Pildid/Nimetu_8.png" /></li>
-      </div>
-    </section>
-
-    <!-- SECTION 6 -->
-    <section class="section section--alt" id="moju">
-      <div class="section-inner">
-        <div class="step-badge">Samm 5</div>
-        <h2 class="section-title">Kuidas kalender mõjutab ajakava?</h2>
-        <p>Kalender on otseselt seotud kõigi ülesannete kestustega. Siin on praktilised näited:</p>
-
-        <div class="impact-grid">
-          <div class="impact-card">
-            <span class="impact-icon">📅</span>
-            <h3>Ülesande kestus</h3>
-            <p>5-päevase kestusega ülesanne arvestab ainult tööpäevi. Kui vahepeal on riigipüha, lükkub lõpukuupäev automaatselt edasi.</p>
-            <div class="gantt-demo">
-              <div class="gantt-row">
-                <span class="gantt-label">Standard:</span>
-                <div class="gantt-bar"><div class="gantt-fill">5 päeva → reede</div></div>
-              </div>
-              <div class="gantt-row">
-                <span class="gantt-label">Pühaga:</span>
-                <div class="gantt-bar"><div class="gantt-fill gantt-fill--shift">5 päeva → esmaspäev</div></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="impact-card">
-            <span class="impact-icon">🔗</span>
-            <h3>Sõltuvused</h3>
-            <p>Omavahel seotud ülesanded (Finish-to-Start) arvutavad järgmise ülesande alguse lähtuvalt töögraafikust.</p>
-            <div class="tip-box tip-box--inline">Puhkus võib nihutada kogu projektiploki!</div>
-          </div>
-
-          <div class="impact-card">
-            <span class="impact-icon">👥</span>
-            <h3>Ressursi ülekoormus</h3>
-            <p>Kui ressursi kalender erineb projekti omast (nt osalise tööajaga töötaja), arvestab Project töökoormust vastavalt ressursi töögraafikule.</p>
-          </div>
-
-          <div class="impact-card">
-            <span class="impact-icon">⚡</span>
-            <h3>Kriitiline tee</h3>
-            <p>Kalendrimuutused võivad muuta kriitilist teed — projekti lõpukuupäev võib muutuda isegi siis, kui te ühtegi ülesannet ei muuda.</p>
-          </div>
-        </div>
-
-        <div class="summary-box">
-          <h3>✅ Kokkuvõte — Mida oleme õppinud</h3>
-          <ul class="summary-list">
-            <li>Kuidas avada <strong>Change Working Time</strong> dialoogi</li>
-            <li>Kuidas luua uus baaskalender nimega</li>
-            <li>Kuidas muuta tööpäevi ja -aegu — <strong>Work Weeks → Details</strong></li>
-            <li>Kuidas lisada riigipühi — vahekaart <strong>Exceptions</strong></li>
-            <li>Kuidas rakendada kalender projektile — <strong>Project Information</strong></li>
-            <li>Kuidas kalender mõjutab ülesannete kestust ja projekti lõppkuupäeva</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div>
-        <span class="footer-logo">MS Project · Kalender</span>
-        <p>Mariia Posvystak.</p>
-      </div>
-      <div class="footer-right">
-        <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">GitHub →</a>
-        <span>Avaldatud GitHub Pages kaudu</span>
+  <div class="step">
+    <div class="step-num">04</div>
+    <div class="step-body">
+      <h2>Määra tööajad ja kordumismuster</h2>
+      <p>Vali sakk <code>Exceptions</code> ja lisa erand nimega (nt <em>Õhtune tööaeg</em>). Klõpsa <code>Details…</code> nupul. Saad määrata täpsed kellaajad, kordumismustri (nt iganädalaselt E–R) ning kehtivusperioodi.</p>
+      <p>Näites on tööajad <strong>14:00–18:00</strong> ja <strong>19:00–23:00</strong>, kordub iganädalaselt esmaspäevast reedeni kuni 30.06.2026.</p>
+      <div class="screenshot">
+        <div class="screenshot-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span style="font-size:0.75rem;color:var(--text-dim);margin-left:0.5rem">Details – tööaja erand</span></div>
+        <img src="Pildid/Nimetu_4.png" alt="Erandite detailide aken – tööajad ja kordumismuster">
       </div>
     </div>
-  </footer>
+  </div>
 
+  <div class="step">
+    <div class="step-num">05</div>
+    <div class="step-body">
+      <h2>Rakenda kalender ülesandele</h2>
+      <p>Tee topeltklikk ülesandel, et avada <em>Task Information</em>. Mine vahekaardile <code>Advanced</code>. Vali <code>Calendar</code> rippmenüüst uus loodud kalender (nt <em>New Calendar</em>).</p>
+      <div class="screenshot">
+        <div class="screenshot-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span style="font-size:0.75rem;color:var(--text-dim);margin-left:0.5rem">Task Information → Advanced → Calendar</span></div>
+        <img src="Pildid/Nimetu_7.png" alt="Task Information – kalendri valik Advanced vahekaardil">
+      </div>
+      <div class="info-box"><strong>Tulemus:</strong> Pärast kalendri rakendamist arvutab Project ülesande ajad ümber vastavalt uutele tööaegadele.</div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">06</div>
+    <div class="step-body">
+      <h2>Tulemus – muutunud ajakava</h2>
+      <p>Pärast uue kalendri rakendamist on ülesannete algus- ja lõpuajad muutunud. Näites on UI/UX ja disaini ploki ülesanded alanud kell <strong>14:00</strong> ja lõppenud <strong>23:00</strong> – vastavalt uuele tööajale.</p>
+      <div class="screenshot">
+        <div class="screenshot-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div><span style="font-size:0.75rem;color:var(--text-dim);margin-left:0.5rem">Gantt Chart – uus ajakava pärast kalendri muutmist</span></div>
+        <img src="Pildid/Nimetu_8.png" alt="Gantt chart – ülesanded uue tööajaga">
+      </div>
+      <div class="tip-box">✅ <strong>Kokkuvõte:</strong> Kalender mõjutab otseselt seda, millal Project arvutab ülesannete algus- ja lõpuajad. Erinevad ressursid võivad kasutada erinevaid kalendreid.</div>
+    </div>
+  </div>
+
+</div>
+
+<footer>Microsoft Project Juhend · Koostatud 2026</footer>
 </body>
 </html>
