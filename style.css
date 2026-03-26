@@ -50,8 +50,6 @@ code {
   border-radius: var(--radius-sm);
   color: var(--accent2);
 }
-img {
-   width: 150px;}
 strong { font-weight: 600; color: #fff; }
 em { font-style: italic; color: var(--text-dim); }
 p { margin-bottom: 0.9rem; }
